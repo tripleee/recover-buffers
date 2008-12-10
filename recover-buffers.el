@@ -49,6 +49,7 @@ This is a numeric level from 0 to 5; 0 means no messages."
 (defsubst recover-buffers-say (lvl &rest msg)
   (and (<= lvl recover-buffers-verbosity-level) (apply #'message msg)) )
 
+;;;###autoload
 (defun recover-buffers ()
   "Like `recover-session', but visit all the buffers from the selected file.
 
