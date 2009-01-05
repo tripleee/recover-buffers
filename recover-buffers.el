@@ -9,10 +9,6 @@
 ;;
 ;; (autoload 'recover-buffers "recover-buffers" nil t)
 ;;
-;; As this is a fairly minor extension of existing built-in functionality,
-;; no separate customization group is created.  The user-settable variables
-;; all have the prefix `recover-buffers-'.
-;;
 ;;
 ;; License: dual GPL v2 / BSD without advertising clause
 ;;
@@ -30,20 +26,24 @@
 
 ;;; Code:
 
+;;;###autoload
+(defgroup recover-buffers nil
+  "Restore state after a crash, like `recover-session' but visit all buffers."
+  :group 'auto-save
+  :group 'backup
+  :link '(emacs-commentary-link :tag "Commentary" "recover-buffers.el")
+  :link '(emacs-library-link :tag "Lisp File" "recover-buffers.el"))
+
 (defcustom recover-buffers-skip-list nil ; '("\\`/tmp/")
   "List of regular expressions of file names to ignore in `recover-buffers'."
   :type '(repeat regexp)
-  :group 'auto-save
-  :group 'find-file
-  :group 'backup)
+  :group 'recover-buffers)
 
 (defcustom recover-buffers-verbosity-level 1
   "How much to emit progress messages during `recover-buffers-finish'.
 This is a numeric level from 0 to 5; 0 means no messages."
   :type  '(integer) ;;;;;;;; TODO: number in range 0 thru 5
-  :group 'auto-save
-  :group 'find-file
-  :group 'backup)
+  :group 'recover-buffers)
 
 
 (defsubst recover-buffers-say (lvl &rest msg)
