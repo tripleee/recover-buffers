@@ -21,9 +21,10 @@
 ;;      Reimplemented from scratch, vaguely based on an earlier private version
 ;;
 ;; See the version control logs for detailed history.
+;; <http://porkmail.org/elisp/recover-buffers/>
 ;;
-;;;;;;;; TODO: public darcs (or SVN?) repo
-
+;; See also <http://emacsbugs.donarmstrong.com/889>
+;;
 ;;; Code:
 
 ;;;###autoload
