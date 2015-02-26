@@ -19,11 +19,12 @@
 ;;
 ;; era Thu Nov 27 15:38:06 2008 -- first public version
 ;;      Reimplemented from scratch, vaguely based on an earlier private version
+;; era Thu Feb 26 07:08:21 2015 -- migrate to Github; update links
 ;;
 ;; See the version control logs for detailed history.
-;; <http://porkmail.org/elisp/recover-buffers/>
+;; <https://github.com/tripleee/recover-buffers>
 ;;
-;; See also <http://emacsbugs.donarmstrong.com/889>
+;; See also <http://debbugs.gnu.org/889>
 ;;
 ;;; Code:
 
