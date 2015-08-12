@@ -60,6 +60,9 @@ Files whose names match `recover-buffers-skip-list' will not be visited."
   (recover-session)
   (define-key (current-local-map) "\C-c\C-c" #'recover-buffers-finish) )
 
+;; Shut up byte compiler
+(declare-function dired-get-filename "dired.el" nil)
+
 (defun recover-buffers-finish ()
   "Revisit all buffers from the selected Emacs auto-save file.
 Offer to recover any files for which auto-save data is available.
