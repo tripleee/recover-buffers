@@ -20,6 +20,10 @@ more with the information from the session file you select.
 The file `50recover-buffers.el` contains a simple autoload stanza which
 you can copy to, or load from, your `init.el` file.
 
+Now that this package is also available from MELPA, you should probably
+simply obtain it from there instead. <http://melpa.org/>
+
+
 History
 -------
 
