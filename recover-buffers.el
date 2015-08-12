@@ -2,13 +2,12 @@
 ;;
 ;;; Commentary:
 ;;
-;; Works like `recover-session', but attempts to really recover all state
-;; back to the way it was when Emacs quit or crashed.  Concretely, it
-;; revisits all buffers which were open, however skipping any which match
-;; an ignore list.
+;; This is a replacement for `recover-session` which actually recovers
+;; your state from the previous Emacs session -- revisits all files and
+;; allows you to continue where you left off.
 ;;
-;; (autoload 'recover-buffers "recover-buffers" nil t)
-;;
+;; For more details, please see the GitHub README.md presentation at
+;; <https://github.com/tripleee/recover-buffers>
 ;;
 ;; License: dual GPL v2 / BSD without advertising clause
 ;;
@@ -22,9 +21,6 @@
 ;; era Thu Feb 26 07:08:21 2015 -- migrate to Github; update links
 ;;
 ;; See the version control logs for detailed history.
-;; <https://github.com/tripleee/recover-buffers>
-;;
-;; See also <http://debbugs.gnu.org/889>
 ;;
 ;;; Code:
 

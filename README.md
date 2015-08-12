@@ -15,11 +15,10 @@ Where previously you would have said `emacs -f recover-session &`, now
 say `emacs -f recover-buffers &` instead.
 
 The interface is quite similar to `recover-session`, the code just does
-more what the information from the session file you select.
+more with the information from the session file you select.
 
 The file `50recover-buffers.el` contains a simple autoload stanza which
 you can copy to, or load from, your `init.el` file.
-
 
 History
 -------
