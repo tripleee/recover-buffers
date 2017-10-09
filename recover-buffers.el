@@ -9,7 +9,8 @@
 ;; For more details, please see the GitHub README.md presentation at
 ;; <https://github.com/tripleee/recover-buffers>
 ;;
-;; License: dual GPL v2 / BSD without advertising clause
+;; License: dual GPL v3+ / BSD without advertising clause
+;; (Earlier versions had GPL v2 / BSD; no code changes.)
 ;;
 ;; Author: era eriksson <http://www.iki.fi/era>
 ;;
