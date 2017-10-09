@@ -20,6 +20,7 @@
 ;; era Thu Nov 27 15:38:06 2008 -- first public version
 ;;      Reimplemented from scratch, vaguely based on an earlier private version
 ;; era Thu Feb 26 07:08:21 2015 -- migrate to Github; update links
+;; era Mon Oct 09 07:37:55 2017 -- update license (issue #2)
 ;;
 ;; See the version control logs for detailed history.
 ;;
